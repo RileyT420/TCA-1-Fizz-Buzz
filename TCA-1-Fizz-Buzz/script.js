@@ -1,5 +1,16 @@
 function fizzbuzz(n) {
-	// Write your code here
+	for (let i = 1; i <= n; i++){
+	if (Number.isInteger(i/3) && Number.isInteger(i/5)) {
+		console.log("fizzbuzz")
+	} else if (Number.isInteger(i/3)) {
+		console.log("fizz");	
+	} else if (Number.isInteger(i/5)) {
+		console.log("buzz")
+	} else {
+		console.log(i)
+	}
+}
+
 
 
 	// Leave the console.log below at the bottom of the function
